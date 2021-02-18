@@ -1,0 +1,17 @@
+- 入门教程
+    - [快速入门](tutorial@started.md)
+- Simple
+    - [语法](simple@grammar.md)
+    - [类型](simple@type.md)
+    - [声明](simple@declaration.md)
+    - [语句](simple@statement.md)
+- 类库开发
+    - [核心类库](library@core.md)
+    - [开发指南](library@develop.md)
+- 附加其它
+    - [更新日志](update.md)
+- 友情链接
+    - [![](https://api.byi.pw/favicon/?url=https://code.google.com/archive/p/simple/ ':size=14') Simple](https://code.google.com/archive/p/simple/)
+    - [![](https://api.byi.pw/favicon/?url=https://www.freenom.com ':size=14') Freenom](https://www.freenom.com)
+    - [![](https://api.byi.pw/favicon/?url=https://coding.net ':size=14') Coding](https://coding.net)
+    - [![](https://api.byi.pw/favicon/?url=https://docsify.js.org ':size=14') Docsify](https://docsify.js.org)

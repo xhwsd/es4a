@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>ES4A</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="description" content="安卓应用开发工具" />
+	<meta name="keywords" content="e,vb,es4a,simple,android,安卓,中文编程" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<link rel="icon" href="static/image/favicon.ico" type="image/x-icon" />
+	<!-- docsify主题(基于 https://unpkg.com/docsify@4.10.3/themes/vue.css 优化而来) -->
+	<link rel="stylesheet" href="static/css/vue.css" />
+</head>
+<body>
+	<!-- 初始化时提示信息 -->
+	<div id="app">🚀 正在玩命加载中...</div>
+
+	<!-- docsify文档定义 -->
+	<script>
+	window.$docsify = {
+		// 文档名称
+		name: "ES4A",
+		// 文档加载的根路径，可以是二级路径或者是其他域名的路径
+		basePath: "/docs/",
+		// 封面，加载 _coverpage.md
+		coverpage: true,
+		// 导航栏，加载 _navbar.md
+		loadNavbar: true,
+		// 侧边栏，加载 _sidebar.md
+		loadSidebar: true,
+		// 自定义404页面，加载 _404.md
+		notFoundPage: true,
+		// 切换页面后是否自动跳转到页面顶部
+		auto2top: true,
+		// 执行文档里的第一个script标签里的脚本
+		executeScript: true,
+		// 小屏设备下合并导航栏到侧边栏
+		mergeNavbar: true,
+		// 最大支持渲染的标题层级
+		maxLevel: 4,
+		// 生成目录(侧边栏)的最大层级
+		subMaxLevel: 2,
+		// 格式化文档更新时间
+		formatUpdated: "{YYYY}/{MM}/{DD} {HH}:{mm}",
+
+		// 自定义插件
+		plugins: [
+			function (hook, vm) {
+				hook.beforeEach(function (content) {
+					// 每次开始解析 Markdown 内容时调用
+					return content
+						+ "\n----\n"
+						+ "<div id='lv-container' data-id='city' data-uid='MTAyMC80OTcyOC8yNjIxOQ=='></div>\n"
+						+ "\n----\n"
+						+ "- *[@httpGet](https://v1.alapi.cn/api/soul?format=text)*\n"
+						+ "- 该文档更新于`{docsify-updated}`\n"
+						+ "- © 2020 [腾联工作室](https://tenglian.net) All Rights Reserved.";
+				});
+
+				hook.doneEach(function() {
+					(function(d, s) {
+						var j, e = d.getElementsByTagName(s)[0];
+						if (typeof LivereTower === 'function') { return; }
+						j = d.createElement(s);
+						j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+						j.async = true;
+						e.parentNode.insertBefore(j, e);
+					})(document, 'script');
+				});
+			}
+		],
+
+		// 全文搜索/search
+		search: {
+			// 过期时间，单位毫秒，默认一天
+			maxAge: 86400000,
+			// 路径
+			paths: "auto",
+			// 搜索提示
+			placeholder: "搜索...",
+			// 未搜索到显示
+			noData: "未找不到结果!",
+			// 搜索标题的最大程级，1 - 6
+			depth: 4
+		},
+
+		// 复制代码到剪贴板/docsify-copy-code
+		copyCode: {
+			buttonText : '复制',
+			errorText  : '错误',
+			successText: '复制'
+		},
+
+		// httpGet/docsify-http-get
+		httpGet: {
+			tag: '@httpGet', // 缺省为 httpGet
+		},
+
+		// docsify-valine (defaults)
+		Valine: {
+			appId: 'LnkQMrVBOge4B9laXIoRWOg6-gzGzoHsz',
+			appKey: '8f58j7wQVNLsat0aBRIcGFQy'
+		}
+	}
+	</script>
+
+	<!--
+		Docsify
+	-->
+	<!-- Docsify(https://github.com/docsifyjs/docsify) -->
+	<script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+	<!-- 全文搜索(https://github.com/docsifyjs/docsify/tree/develop/src/plugins/search) -->
+	<script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+	<!-- emoji表情(https://github.com/docsifyjs/docsify/tree/develop/src/plugins) -->
+	<script src="//unpkg.com/docsify/lib/plugins/emoji.min.js"></script>
+	<!-- 图片缩放(https://github.com/docsifyjs/docsify/tree/develop/src/plugins) -->
+	<script src="//unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script>
+	<!-- 外链脚本(https://github.com/docsifyjs/docsify/tree/develop/src/plugins) -->
+	<script src="//unpkg.com/docsify/lib/plugins/external-script.min.js"></script>
+  	<!-- 复制代码到剪贴板(https://github.com/jperasmus/docsify-copy-code) -->
+	<script src="//unpkg.com/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+	<!-- HttpGet(基于 https://github.com/JerryC8080/docsify-remote-markdown v1.0.1 修改而来) -->
+	<script src="static/js/docsify-http-get.min.js"></script>
+
+	<!--
+		Prism 代码高亮
+	-->
+	<!-- Prism基类 -->
+	<script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
+	<!-- INI -->
+	<script src="//unpkg.com/prismjs/components/prism-ini.min.js"></script>
+	<!-- JSON -->
+	<script src="//unpkg.com/prismjs/components/prism-json.min.js"></script>
+	<!-- HTML -->
+	<script src="//unpkg.com/prismjs/components/prism-http.min.js"></script>
+	<!-- JavaScript -->
+	<script src="//unpkg.com/prismjs/components/prism-javascript.min.js"></script>
+	<!-- CSS -->
+	<script src="//unpkg.com/prismjs/components/prism-css.min.js"></script>
+	<!-- CSS 扩展 -->
+	<script src="//unpkg.com/prismjs/components/prism-css-extras.min.js"></script>
+	<!-- PHP -->
+	<script src="//unpkg.com/prismjs/components/prism-php.min.js"></script>
+	<!-- PHP 扩展 -->
+	<script src="//unpkg.com/prismjs/components/prism-php-extras.min.js"></script>
+	<!-- SQL -->
+	<script src="//unpkg.com/prismjs/components/prism-sql.min.js"></script>
+	<!-- Java -->
+	<script src="//unpkg.com/prismjs/components/prism-java.min.js"></script>
+	<!-- Visual Basic -->
+	<script src="//unpkg.com/prismjs/components/prism-basic.min.js"></script>
+	<!-- Simple 本地自定义实现(基于 https://unpkg.com/browse/prismjs@1.20.0/components/prism-visual-basic.js 修改而来) -->
+	<script src="static/js/prism-simple.js"></script>
+	<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <script src="//unpkg.com/docsify-valine/dist/docsify-valine.min.js"></script>
+</body>
+</html>

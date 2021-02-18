@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.watcherExclude": {
+			"**/.bak/**": true
+		},
+		"search.exclude": {
+			"**/.bak": true
+		}
+	}
+}
