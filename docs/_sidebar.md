@@ -11,7 +11,7 @@
 - 附加其它
     - [更新日志](update.md)
 - 友情链接
-    - [![](https://api.byi.pw/favicon/?url=https://code.google.com/archive/p/simple/ ':size=14') Simple](https://code.google.com/archive/p/simple/)
-    - [![](https://api.byi.pw/favicon/?url=https://www.freenom.com ':size=14') Freenom](https://www.freenom.com)
-    - [![](https://api.byi.pw/favicon/?url=https://coding.net ':size=14') Coding](https://coding.net)
-    - [![](https://api.byi.pw/favicon/?url=https://docsify.js.org ':size=14') Docsify](https://docsify.js.org)
+    - [![](https://ico.di8du.com/get.php?url=https://code.google.com/archive/p/simple/ ':size=14') Simple](https://code.google.com/archive/p/simple/)
+    - [![](https://ico.di8du.com/get.php?url=https://www.freenom.com ':size=14') Freenom](https://www.freenom.com)
+    - [![](https://ico.di8du.com/get.php?url=https://coding.net ':size=14') Coding](https://coding.net)
+    - [![](https://ico.di8du.com/get.php?url=https://docsify.js.org ':size=14') Docsify](https://docsify.js.org)
