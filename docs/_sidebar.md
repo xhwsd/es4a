@@ -13,5 +13,5 @@
 - 友情链接
     - [![](https://ico.di8du.com/get.php?url=https://code.google.com/archive/p/simple/ ':size=14') Simple](https://code.google.com/archive/p/simple/)
     - [![](https://ico.di8du.com/get.php?url=https://www.freenom.com ':size=14') Freenom](https://www.freenom.com)
-    - [![](https://ico.di8du.com/get.php?url=https://coding.net ':size=14') Coding](https://coding.net)
+    - [![](https://ico.di8du.com/get.php?url=https://github.com ':size=14') GitHub](https://github.com)
     - [![](https://ico.di8du.com/get.php?url=https://docsify.js.org ':size=14') Docsify](https://docsify.js.org)
