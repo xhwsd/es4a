@@ -57,7 +57,6 @@
 				hook.beforeEach(function (content) {
 					return content
 						+ "\n----\n"
-						+ "- *[@httpGet](https://v1.alapi.cn/api/soul?format=text)*\n"
 						+ "- 该文档更新于`{docsify-updated}`\n"
 						+ "- © 2020 [腾联工作室](https://tenglian.net) All Rights Reserved.";
 				})
@@ -119,8 +118,6 @@
 	<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
   	<!-- 复制代码到剪贴板(https://github.com/jperasmus/docsify-copy-code) -->
 	<script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
-	<!-- HttpGet(基于 https://github.com/JerryC8080/docsify-remote-markdown v1.0.1 修改而来) -->
-	<script src="static/js/docsify-http-get.min.js"></script>
 
 	<!-- Prism核心 -->
 	<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
