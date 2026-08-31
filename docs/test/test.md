@@ -1,9 +1,9 @@
 # 测试
-- [BiliBili](test@bilibili.md)
-- [DogeCloud](test@dogecloud.md)
-- [GoIndex](test@goindex.md)
-- [V2Geek](test@v2geek.md)
-- [Form](test@form.md)
+- [BiliBili](bilibili.md)
+- [DogeCloud](dogecloud.md)
+- [GoIndex](goindex.md)
+- [V2Geek](v2geek.md)
+- [Form](form.md)
 
 
 ```simple

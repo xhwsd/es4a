@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="static/css/vue.css" />
 </head>
 <body>
-	<!-- 初始化时提示信息 -->
+	<!-- 绑定元素 -->
 	<div id="app">🚀 正在加载文档中...</div>
 
 	<!-- docsify文档定义 -->
@@ -21,14 +21,17 @@
 		// 文档名称
 		name: "ES4A",
 		// 文档加载的根路径，可以是二级路径或者是其他域名的路径
-		basePath: "/docs/",
-		// 封面，加载 _coverpage.md
+		// 这里用相对路径，让文档支持在子仓库页中可正常显示
+		basePath: "./docs/",
+		// 启用相对路径
+		relativePath: false,
+		// 启用封面；加载 _coverpage.md
 		coverpage: true,
-		// 导航栏，加载 _navbar.md
+		// 定制导航栏，加载 _navbar.md
 		loadNavbar: true,
-		// 侧边栏，加载 _sidebar.md
+		// 定制侧边栏；加载 _sidebar.md
 		loadSidebar: true,
-		// 自定义404页面，加载 _404.md
+		// 定制404页面，加载 _404.md
 		notFoundPage: true,
 		// 切换页面后是否自动跳转到页面顶部
 		auto2top: true,
@@ -41,41 +44,45 @@
 		// 生成目录(侧边栏)的最大层级
 		subMaxLevel: 2,
 		// 格式化文档更新时间
-		formatUpdated: "{YYYY}/{MM}/{DD} {HH}:{mm}",
+		formatUpdated: "{YYYY}/{MM}/{DD}",
+		// 定义路由别名，可以更自由的定义路由规则。支持正则。
+		alias: {
+			// 解决因浏览目录中文档时，会自动请求目录下的 _navbar.md _sidebar.md
+			"/.*/_navbar.md": "/_navbar.md",
+			"/.*/_sidebar.md": "/_sidebar.md"
+		},
 		// 自定义插件
 		plugins: [
 			function (hook, vm) {
-				// 初始化时调用，只调用一次
 				hook.init(function() {
-					// ...
-				})
-				// 初始化完成后调用，只调用一次
-				hook.mounted(function() {
-					// ...
-				})
-				// 每次开始解析 Markdown 内容时调用
-				hook.beforeEach(function (content) {
+					// 初始化完成后调用，只调用一次，没有参数。
+				});
+				hook.beforeEach(function(content) {
+					// 每次开始解析 Markdown 内容时调用
 					return content
-						+ "\n----\n"
-						+ "- 该文档更新于`{docsify-updated}`\n"
-						+ "- © 2020 [腾联工作室](https://tenglian.net) All Rights Reserved.";
-				})
-				// 解析成 html 后调用。beforeEach 和 afterEach 支持处理异步逻辑
+						+ "\n---"
+						+ "\n- 该文档更新于`{docsify-updated}`"
+						+ "\n- © 2026 [ES4A](https://es4a.paike.it) All Rights Reserved.";
+				});
 				hook.afterEach(function(html, next) {
-					// ...
+					// 解析成 html 后调用。
+					// beforeEach 和 afterEach 支持处理异步逻辑
 					// 异步处理完成后调用 next(html) 返回结果
 					next(html)
+				});
+				hook.doneEach(function() {
+					// 每次路由切换时数据全部加载完成后调用，没有参数。
+				});
+				hook.mounted(function() {
+					// 初始化并第一次加载完成数据后调用，只触发一次，没有参数。
 				})
-				// 每次路由切换时数据全部加载完成后调用
-				hook.doneEach(function () {
-					// ...
-				})
-				// 初始化并第一次加载完成数据后调用，没有参数。
 				hook.ready(function() {
-					// ...
-				})
+					// 初始化并第一次加载完成数据后调用，没有参数。
+				});
 			}
 		],
+
+		/* 插件配置项 */
 		// 全文搜索/search
 		search: {
 			// 过期时间，单位毫秒，默认一天

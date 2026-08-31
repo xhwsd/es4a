@@ -1,17 +1,17 @@
 - 入门教程
-    - [快速入门](tutorial@started.md)
+    - [快速入门](tutorial/started.md)
 - Simple
-    - [语法](simple@grammar.md)
-    - [类型](simple@type.md)
-    - [声明](simple@declaration.md)
-    - [语句](simple@statement.md)
+    - [语法](simple/grammar.md)
+    - [类型](simple/type.md)
+    - [声明](simple/declaration.md)
+    - [语句](simple/statement.md)
 - 类库开发
-    - [核心类库](library@core.md)
-    - [开发指南](library@develop.md)
+    - [核心类库](library/core.md)
+    - [开发指南](library/develop.md)
 - 附加其它
     - [更新日志](update.md)
 - 友情链接
-    - [![](https://ico.di8du.com/get.php?url=https://code.google.com/archive/p/simple/ ':size=14') Simple](https://code.google.com/archive/p/simple/)
-    - [![](https://ico.di8du.com/get.php?url=https://www.freenom.com ':size=14') Freenom](https://www.freenom.com)
-    - [![](https://ico.di8du.com/get.php?url=https://github.com ':size=14') GitHub](https://github.com)
-    - [![](https://ico.di8du.com/get.php?url=https://docsify.js.org ':size=14') Docsify](https://docsify.js.org)
+    - [![](https://api.mikucdn.com/favicon/?url=https://code.google.com/archive/p/simple/ ':size=14') Simple](https://code.google.com/archive/p/simple/)
+    - [![](https://api.mikucdn.com/favicon/?url=https://github.com ':size=14') GitHub](https://github.com)
+    - [![](https://api.mikucdn.com/favicon/?url=https://cloudflare.com ':size=14') Cloudflare](https://cloudflare.com)
+    - [![](https://api.mikucdn.com/favicon/?url=https://docsify.js.org ':size=14') Docsify](https://docsify.js.org)
