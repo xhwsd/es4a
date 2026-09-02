@@ -168,7 +168,8 @@
 
 ```simple
 ' 定义事件处理器的相关例子
-变量 对象1 为 事件的对象 '该变量包括了已定义一个“测试事件”的对象 
+
+变量 对象1 为 事件的对象 ' 该变量包括了已定义一个“测试事件”的对象 
 
 事件 对象1.测试事件(文本 为 文本型)
 	状态标签 = "状态 : " & 文本
@@ -206,7 +207,7 @@
 ' 错误例子 
 ' 重复定义别名是不允许的 
 
-别名 Form = com.demo.devtools.example1.objectType '编译时期错误
+别名 Form = com.demo.devtools.example1.objectType ' 编译时期错误
 别名 ObjectType = com.demo.devtools.example1.ObjectType 
-别名 ObjectType = com.demo.devtools.example2.ObjectType '编译时期错误
+别名 ObjectType = com.demo.devtools.example2.ObjectType ' 编译时期错误
 ```

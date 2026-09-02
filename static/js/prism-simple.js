@@ -1,6 +1,6 @@
 /*
  * Prism 的 Simple 高亮插件 2020-4-16
- * 东子 xhwsd@qq.com 
+ * 树先生 xhwsd@qq.com 
  * 
  * 基于 https://cdn.jsdelivr.net/npm/prismjs@1.20.0/components/prism-visual-basic.js 魔改
  */

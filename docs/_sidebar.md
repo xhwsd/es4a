@@ -9,7 +9,7 @@
     - [核心类库](library/core.md)
     - [开发指南](library/develop.md)
 - 附加其它
-    - [更新日志](update.md)
+    - [更新日志](CHANGELOG.md)
 - 友情链接
     - [![](https://api.mikucdn.com/favicon/?url=https://code.google.com/archive/p/simple/ ':size=14') Simple](https://code.google.com/archive/p/simple/)
     - [![](https://api.mikucdn.com/favicon/?url=https://github.com ':size=14') GitHub](https://github.com)
