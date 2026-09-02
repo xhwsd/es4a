@@ -6,5 +6,5 @@
 
 安卓应用开发工具
 
-[:inbox_tray: 下载](https://jq.qq.com/?_wv=1027&k=5uzcu0v)
+[:inbox_tray: 下载](https://dwz.wsd.cx/es4a-xz)
 [:page_with_curl: 文档](#关于)
