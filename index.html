@@ -7,9 +7,11 @@
 	<meta name="description" content="安卓应用开发工具" />
 	<meta name="keywords" content="e,vb,es4a,simple,android,安卓,中文编程" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
-	<link rel="icon" href="static/image/favicon.ico" type="image/x-icon" />
+	<!-- <link rel="icon" href="static/image/favicon.ico" type="image/x-icon" /> -->
+	<link rel="stylesheet" href="https://cdn.jsdmirror.cn/gh/xhwsd/es4a@main/static/image/favicon.ico" />
 	<!-- docsify主题(基于 https://cdn.jsdelivr.net/npm/docsify@4.11.3/themes/vue.css 优化而来) -->
-	<link rel="stylesheet" href="static/css/vue.css" />
+	<!-- <link rel="stylesheet" href="static/css/vue.css" /> -->
+	<link rel="stylesheet" href="https://cdn.jsdmirror.cn/gh/xhwsd/es4a@main/static/css/vue.css" />
 </head>
 <body>
 	<!-- 绑定元素 -->
@@ -22,7 +24,8 @@
 		name: "ES4A",
 		// 文档加载的根路径，可以是二级路径或者是其他域名的路径
 		// 这里用相对路径，让文档支持在子仓库页中可正常显示
-		basePath: "./docs/",
+		// basePath: "https://cdn.jsdelivr.net/gh/xhwsd/es4a@main/docs/",
+		basePath: "https://cdn.jsdmirror.cn/gh/xhwsd/es4a@main/docs/",
 		// 启用相对路径
 		relativePath: false,
 		// 启用封面；加载 _coverpage.md
@@ -83,6 +86,7 @@
 		],
 
 		/* 插件配置项 */
+
 		// 全文搜索/search
 		search: {
 			// 过期时间，单位毫秒，默认一天
@@ -111,12 +115,14 @@
 	</script>
 
 	<!-- 基础依赖 -->
+
 	<!-- Vue 为文档中数据绑定提供支持-->
 	<script src="https://cdn.bootcdn.net/ajax/libs/vue/2.7.9/vue.min.js"></script>
 	<!-- Docsify核心(https://github.com/docsifyjs/docsify) -->
 	<script src="https://cdn.bootcdn.net/ajax/libs/docsify/4.13.1/docsify.min.js"></script>
 
 	<!-- Docsify官方插件 -->
+
 	<!-- 全文搜索(https://github.com/docsifyjs/docsify/tree/develop/src/plugins/search) -->
 	<script src="https://cdn.bootcdn.net/ajax/libs/docsify/4.13.1/plugins/search.min.js"></script>
 	<!-- emoji表情(https://github.com/docsifyjs/docsify/tree/develop/src/plugins) -->
@@ -127,10 +133,12 @@
 	<script src="https://cdn.bootcdn.net/ajax/libs/docsify/4.13.1/plugins/external-script.min.js"></script>
 
 	<!-- Docsify第三方插件 -->
+
   	<!-- 复制代码到剪贴板(https://github.com/jperasmus/docsify-copy-code) -->
 	<script src="https://cdn.bootcdn.net/ajax/libs/docsify-copy-code/3.0.0/docsify-copy-code.min.js"></script>
 
 	<!-- Prism代码高亮 -->
+
 	<!-- Prism核心 -->
 	<script src="https://cdn.bootcdn.net/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
 	<!-- INI -->
@@ -156,6 +164,7 @@
 	<!-- Visual Basic -->
 	<script src="https://cdn.bootcdn.net/ajax/libs/prism/1.29.0/components/prism-basic.min.js"></script>
 	<!-- Simple 本地自定义实现(基于 https://cdn.jsdelivr.net/npm/prismjs@1.20.0/components/prism-visual-basic.js 修改而来) -->
-	<script src="static/js/prism-simple.js"></script>
+	<!-- <script src="static/js/prism-simple.js"></script> -->
+	<script src="https://cdn.jsdmirror.cn/gh/xhwsd/es4a@main/static/js/prism-simple.js"></script>
 </body>
 </html>
